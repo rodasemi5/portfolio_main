@@ -1,31 +1,11 @@
 import React, {useState, useEffect} from 'react'
 import { motion } from 'framer-motion';
 
-import { AppWrap } from '../../wrapper';
+import { AppWrap, MotionWrap } from '../../wrapper';
 
-// import {images} from '../../constants'
 import './About.scss';
 import { urlFor, client } from '../../client';
 
-// const abouts = [
-//   {
-//     title: 'Front-End Development',
-//     description: 'I am a good front-end developer',
-//     imgUrl: images.about01
-//   },
-
-//   {
-//     title: 'Web Design',
-//     description: 'I am a good web designer',
-//     imgUrl: images.about02
-//   },
-
-//   {
-//     title: 'Full-stack Development',
-//     description: 'I am a good full-stack developer',
-//     imgUrl: images.about04
-//   },
-// ];
 
 
 const About = () => {
@@ -69,4 +49,6 @@ const About = () => {
   )
 }
 
-export default AppWrap(About, 'about')
+export default AppWrap(
+  MotionWrap(About, 'app__about'),
+    'about', 'app__whitebg');
