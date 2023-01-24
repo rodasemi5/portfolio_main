@@ -36,8 +36,8 @@
   .app__skills-item {
     flex-direction: column;
     text-align: center;
-  
-    margin: 1rem;
+    
+    margin: 2rem;
   
     transition: all 0.3s ease-in-out;
   
@@ -84,7 +84,7 @@
   .app__skills-exp {
     flex: 1;
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-center;
     align-items: flex-start;
     flex-direction: column;
   
